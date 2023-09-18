@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
         getUser(username)
             .then(user => showUser(user))
             .catch(err => showError(new Error(err)));
+        
+        document.querySelector('input[name="username"]').value = '';
     });
 
-    // document.querySelector('input[name="username"]').value = '';
 
 })
