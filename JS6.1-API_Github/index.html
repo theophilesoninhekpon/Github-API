@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/app.css" />
+        <title>Github API</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body>
+        <div class="min-h-screen flex items-center justify-center flex-col">
+            <h1 class="text-4xl font-bold absolute top-48">GITHUB <span class="bg-green-500 px-2 py-1/2 text-white rounded-lg">CHECKER</span></h1>
+            <form action="" method="" class="shadow-md w-1/4 h-3/6 px-10 py-10 rounded-lg" id="form">
+                <div class="flex flex-col ">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" class="w-full py-2 border-2 rounded-lg border-gray-100">
+                    <div id="error" class="text-red-500"></div>
+                </div>
+                <button type="submit" class="transition-all ease-in-out duration-700 hover:scale-110 block mx-auto mt-5 border-2 border-green-500 bg-green-500 px-4 py-1 text-white hover:bg-white hover:border-dashed hover:border-2 hover:border-green-500 hover:text-black font-semibold rounded-lg">Afficher le profil</button>
+            </form>
+            <div id="result" class="">
+                <div class="">
+                    <img src="" alt="Photo de profil" class="rounded-full h-10 w-10 border-2 border-gray-500" id="avatar">
+                </div>
+                <div id="username"></div>
+                <div id="name"></div>
+                <div id="date"></div>
+                <div id="repos"></div>
+                <a href="" id="link">Voir</a>
+            </div>
+        </div>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
